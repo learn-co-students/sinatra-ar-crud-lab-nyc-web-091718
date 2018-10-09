@@ -1,0 +1,16 @@
+<div class"post">
+  <h3> <%= @post[:name] %> </h3>
+  <p> <%= @post[:content] %> </p>
+</div><br>
+
+<h2>Edit Post</h2>
+
+<form action="/posts/<%=@post[:id]%>" method="post" id="edit_form">
+  <input id="hidden" type="hidden" name="_method" value="patch">
+  <p>Name: <input type="text" name="name"> </p>
+  <p>Content</p>
+  <textarea name="content" form="edit_form">Enter here...</textarea>
+
+  <button type="submit" value"submit">submit</button>
+
+</form>
