@@ -1,0 +1,9 @@
+<h1> Index </h1>
+
+
+<% @posts.each do |post| %>
+  <div class"post">
+    <h3> <%= post[:name] %> </h3>
+    <p> <%= post[:content] %> </p>
+  </div><br>
+<% end %>
