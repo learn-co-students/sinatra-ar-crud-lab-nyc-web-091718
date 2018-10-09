@@ -1,4 +1,3 @@
-#Placeholder for a model
-
 class Post < ActiveRecord::Base
-end
+
+end ### End of Post Class
