@@ -49,5 +49,4 @@ class ApplicationController < Sinatra::Base
     Post.destroy(params[:id])
     erb :delete
   end
-
 end
