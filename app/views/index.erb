@@ -1,0 +1,7 @@
+<h1>Blog Post Index Page</h1>
+
+<% @posts.each do |post| %>
+<p>Name: <%= post.name %><br>
+  Content: <%= post.content %>
+</p>
+<% end %>
