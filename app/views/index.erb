@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Index</title>
+  </head>
+  <body>
+    <h1>All Blog Posts!</h1>
+    <% Post.all.each do |post|%>
+      <h3><%= "#{post.name}"%><br>
+      <%= "#{post.content}"%><br></h3>
+      <% end  %>
+  </body>
+</html>
